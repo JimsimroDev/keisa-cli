@@ -1,8 +1,6 @@
 package uk.jimsimrodev.logica;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -29,8 +27,8 @@ public class MiniScrip {
     private final SymbolTable symbolTable = new SymbolTable();
 
     private final BannerLoader bannerLoader = new BannerLoader();
-    private String bannerCompleto;
-    List<String> config = new ArrayList<>();
+
+    private String config;
 
     // Método privado de inicialización
     private Map<String, Command> registrarComandos() {
@@ -53,11 +51,9 @@ public class MiniScrip {
 
         config = bannerLoader.cargarBanner();
 
-        bannerCompleto = String.join("\n", config);
-
         try (Scanner sc = new Scanner(System.in)) {
 
-            terminalPrinter.animarBloqueLineas(ConsoleColors.NEON_FUCHSIA, config, 50);
+            terminalPrinter.animarTexto(ConsoleColors.NEON_FUCHSIA, config, 1);
 
             String lineaLimpia = "";
 
