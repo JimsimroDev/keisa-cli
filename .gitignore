@@ -1,0 +1,21 @@
+﻿# Maven
+target/
+# Compiled classes
+*.class
+# Package files
+*.jar
+*.war
+*.ear
+# IDEs
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+# macOS
+.DS_Store
+# Logs
+*.log
+# Specific
+keisa.jar
