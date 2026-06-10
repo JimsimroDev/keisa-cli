@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 
 # 1. Definir rutas estándar
 $DirectorioInstalacion = "C:\mis-herramientas"
-$UrlEjecutable = "https://github.com/JimsimroDev/keisa-cli/keisa-cli.exe"
+$UrlEjecutable = "https://raw.githubusercontent.com/JimsimroDev/keisa-cli/main/keisa-cli.exe"
 
 # 2. Crear la carpeta si no existe
 if (-not (Test-Path $DirectorioInstalacion)) {
