@@ -78,14 +78,14 @@ Estructura principal del proyecto:
 Diagrama (Mermaid):
 
 ```mermaid
-graph TD
-  CLI[Keisa (main)] --> REPL[MiniScrip]
-  REPL --> Parser[CommandParser]
-  REPL --> CommandsDir[Commands]
-  REPL --> SymbolTable[SymbolTable]
-  REPL --> View[TerminalPrinter / BannerLoader]
+flowchart TD
+  CLI["Keisa (main)"] --> REPL["MiniScrip"]
+  REPL --> Parser["CommandParser"]
+  REPL --> CommandsDir["Commands"]
+  REPL --> SymbolTable["SymbolTable"]
+  REPL --> View["TerminalPrinter / BannerLoader"]
   CommandsDir -->|execute| SymbolTable
-  Parser --> CommandInput[CommandInput]
+  Parser --> CommandInput["CommandInput"]
 ```
 
 ---
