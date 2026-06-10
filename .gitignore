@@ -11,6 +11,7 @@ target/
 .project
 .settings/
 .idea/
+.junie/
 *.iml
 .vscode/
 # macOS
